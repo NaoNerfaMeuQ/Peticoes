@@ -86,7 +86,7 @@ header nav:hover > a.link-nav:not(:hover) {
 
 .sobre {
     display: flex;
-    height: 100vh;
+    height: 150vh;
     background: #3B3291;
     position: relative;
     overflow: visible;
@@ -115,4 +115,26 @@ header nav:hover > a.link-nav:not(:hover) {
     margin-bottom: 5%;
     position: absolute;
     top: 20%;
+}
+
+
+.contato{
+    display: flex;
+    height: 100vh;
+    background: #3B3291;
+    position: relative;
+    overflow: visible;
+}
+
+.contato .divcontatotitulo{
+    color: white;
+    font-size: 35px;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border: 5px solid #36c87a;
+    border-radius: 99px;
+    padding: 10px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
