@@ -39,7 +39,7 @@ setInterval(mudaGradiente, 2000);
 */
 
 // Lista de textos para o texto
-var logos = ["Resistência", "Conforto", "Explorador", "Curioso", "Selva", "O seu calçado predileto", "Tem um pouco de mato por aqui"];
+var logos = ["Resistência", "Rápido e fácil", "Faça parte", "Fazer a diferença", "Podemos nos ajudar", "Tem um pouco de mato por aqui"];
 
 // Função para mudar o texto do logo
 function mudaLogo() {

@@ -60,7 +60,7 @@ header nav:hover > a.link-nav:not(:hover) {
 
 .home {
     display: flex;
-    height: 100dvh;
+    height: 100vh;
     background: linear-gradient(to top, #f5b002 30%, #d45a5a);
     position: relative;
     overflow: hidden;
@@ -85,32 +85,32 @@ header nav:hover > a.link-nav:not(:hover) {
 
 .sobre {
     display: flex;
-    height: 100dvh;
+    height: 100vh;
     background: #3B3291;
     position: relative;
     overflow: hidden;
 }
 
-.sobre .divsobretitulo{
+
+.sobre .divsobretitulo {
+    color: white;
+    font-size: 35px;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border: 5px solid #36c87a;
+    border-radius: 99px;
+    padding: 10px;
     position: absolute;
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.sobre .divsobretitulo h1{
-    border-radius: 2px;
-    color: white;
-    font-size: 35px;
-    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-}
-
 .sobre .divsobreconteudo{
     align-self: center;
     background-color: white;
-    border-style: solid;
-    border-color: white;
-    padding: 30px;
-    max-width: fit-content;
-    max-height: fit-content;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5%;
+    position: absolute;
+    top: 20%;
 }
