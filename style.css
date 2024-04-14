@@ -9,6 +9,7 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #3B3291;
 }
 
 body{
@@ -88,7 +89,7 @@ header nav:hover > a.link-nav:not(:hover) {
     height: 100vh;
     background: #3B3291;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
 }
 
 
@@ -109,8 +110,9 @@ header nav:hover > a.link-nav:not(:hover) {
     align-self: center;
     background-color: white;
     border-radius: 20px;
-    padding: 10px;
+    padding: 30px;
     margin: 5%;
+    margin-bottom: 5%;
     position: absolute;
     top: 20%;
 }
