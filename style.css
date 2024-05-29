@@ -110,20 +110,26 @@ header nav:hover > a.link-nav:not(:hover) {
     align-self: center;
     background-color: white;
     border-radius: 20px;
-    padding: 30px;
+    padding: 20px;
     margin: 5%;
     margin-bottom: 5%;
     position: absolute;
     top: 20%;
 }
 
+.sobre .divsobreconteudo h2{
+    font-style: italic;
+    color: #36c87a;
+}
+
 
 .peticoes{
     display: flex;
     height: 100vh;
-    background: linear-gradient(to bottom, #3B3291 30%, #d45a5a);
+    background: linear-gradient(to bottom, #3B3291 10%, #d45a5a 70%);
     position: relative;
     overflow: visible;
+    margin-top: 150px;
 }
 
 .peticoes .divpeticoestitulo{
@@ -138,3 +144,70 @@ header nav:hover > a.link-nav:not(:hover) {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+/* aqui tem o livro de peticoes*/
+.book {
+    margin-top: 300px;
+    margin-left: 110px;
+    position: relative;
+    border-radius: 10px;
+    width: 220px;
+    height: 300px;
+    background-color: whitesmoke;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    -webkit-transform: preserve-3d;
+    -ms-transform: preserve-3d;
+    transform: preserve-3d;
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #000;
+  }
+  
+  .cover {
+    top: 0;
+    position: absolute;
+    background-color: rgb(251, 244, 228);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform-origin: 0;
+    -ms-transform-origin: 0;
+    transform-origin: 0;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  
+  .book:hover .cover{
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: rotatey(-95deg);
+    -ms-transform: rotatey(-95deg);
+    transform: rotatey(-95deg);
+  }
+  
+  p {
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 8px;
+  }
