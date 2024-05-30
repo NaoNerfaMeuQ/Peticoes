@@ -170,6 +170,7 @@ header nav:hover > a.link-nav:not(:hover) {
     -ms-flex-pack: center;
     justify-content: center;
     color: #000;
+    cursor: pointer;
   }
   
   .cover {
@@ -204,6 +205,7 @@ header nav:hover > a.link-nav:not(:hover) {
     -webkit-transform: rotatey(-95deg);
     -ms-transform: rotatey(-95deg);
     transform: rotatey(-95deg);
+    cursor: pointer;
   }
   
   p {

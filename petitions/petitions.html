@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Petitions</title>
+    <link rel="stylesheet" href="petititions.css">
+    <link rel="icon" type="image/x-icon" href="/assets/coruja.ico">
+</head>
+<body onload="menu()">
+    <h1 id="titleh1">Petições</h1>
+    <div class="menu-container">
+        <div class="menu-toggle">
+            <input id="checkbox" type="checkbox">
+            <label class="toggle" for="checkbox">
+                <div class="bar bar--top"></div>
+                <div class="bar bar--middle"></div>
+                <div class="bar bar--bottom"></div>
+            </label>
+        </div>
+        <div class="menu-options">
+            <a href="#">Opção 1</a>
+            <a href="#">Opção 2</a>
+            <a href="#">Opção 3</a>
+        </div>
+    </div>
+
+    
+    <div class="container">
+
+        <div class="searchpeti">
+            <input type="text" id="searchInput" placeholder="Pesquisar...">
+        </div>
+              
+        <div class="box">
+            <table id="tabelapeti" style="border-radius: 15;" >
+                <tr style="text-align: center;">
+                    
+                    <td id="nomepeti">Nome</td>
+                    <td id="autorpeti">Autor</td>
+                    <td id="assinaturaspeti">Assinaturas</td>
+                    <td id="Visualpeti">Visualizações</td>
+                    <td id="sobrepeti">Sobre</td>
+
+
+
+                </tr>
+                <tr class="infopeti" id="infopeti" style="text-align: center;">
+                    <td id="tituloinfo">Em defesa da natureza</td>
+                    <td id="nomeinfo">José Padilha</td>
+                    <td id="assinaturainfo">5600</td>
+                    <td id="visualinfo">11245</td>
+                    <td style="text-align: center;" id="buscapeti"><img src="/petitions/assets/busca.png" alt="Lupa de busca" width="32" height="32" margin-top="5"></i><a href="#"></a> </td>
+                  </tr>
+                </tr>
+                <tr class="infopeti" style="text-align: center;">
+                    <td id="tituloinfo">Enchentes recorrentes!</td>
+                    <td id="nomeinfo">Maria Eduarda</td>
+                    <td id="assinaturainfo">3454</td>
+                    <td id="visualinfo">7040</td>
+                    <td style="text-align: center;" id="buscapeti"><img src="/petitions/assets/busca.png" alt="Lupa de busca" width="32" height="32" margin-top="5"></i><a href="#"></a> </td>
+                  </tr>
+                  <tr class="infopeti" style="text-align: center;">
+                    <td id="tituloinfo">A Taylor acaba com a causa ambiental</td>
+                    <td id="nomeinfo">Jefferson Açaí_farinha</td>
+                    <td id="assinaturainfo">2400</td>
+                    <td id="visualinfo">10400</td>
+                    <td style="text-align: center;" id="buscapeti"><img src="/petitions/assets/busca.png" alt="Lupa de busca" width="32" height="32" margin-top="5"></i><a href="#"></a> </td>
+                  </tr>
+            </table>
+
+        </div>
+    </div>
+
+</body>
+<script src="petitions.js"></script>
+</html>
