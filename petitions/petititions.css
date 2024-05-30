@@ -77,7 +77,20 @@ body #titleh1{
     background: linear-gradient(0.25turn, #ffffff, #c5c1c1, #c0daef);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     border: 2px solid;
-    border-radius: 25px;
+    border-radius: 18px;
+    overflow-x: auto;
+    
+}
+
+::-webkit-scrollbar {
+  padding: 2px;
+  height: 5px;
+  width: 10px; /* Largura da barra de rolagem */
+}
+::-webkit-scrollbar-thumb {
+  width: 4px;
+  background: #888; /* Cor da barra de rolagem */
+  border-radius: 10px; /* Bordas arredondadas da barra de rolagem */
 }
 
 
@@ -90,7 +103,7 @@ body #titleh1{
     position: absolute;
     width: 40px;
     cursor: pointer;
-    margin: 10px 50px 0px 100px;
+    margin: 10px 40px 0px 70px; /* top - right - bottom - left */
     display: block;
     height: calc(4px * 3 + 11px * 2);
   }
@@ -109,42 +122,82 @@ body #titleh1{
   
   /***** Tornado Animation *****/
   
-  .bar--top {
-    bottom: calc(50% + 11px + 4px/ 2);
-    transition-property: bottom,transform;
-    transition-delay: calc(0s + 0.35s) * .6;
-  }
-  
-  .bar--middle {
-    top: calc(50% - 4px/ 2);
-    transition-property: opacity,transform;
-    transition-delay: calc(0s + 0.35s * .3);
-  }
-  
-  .bar--bottom {
-    top: calc(50% + 11px + 4px/ 2);
-    transition-property: top,transform;
-    transition-delay: 0s;
-  }
-  
-  #checkbox:checked + .toggle .bar--top {
-    transform: rotate(-135deg);
-    transition-delay: 0s;
-    bottom: calc(50% - 4px/ 2);
-  }
-  
-  #checkbox:checked + .toggle .bar--middle {
-    opacity: 0;
-    transform: rotate(-135deg);
-    transition-delay: calc(0s + 0.35s * .3);
-  }
-  
-  #checkbox:checked + .toggle .bar--bottom {
-    top: calc(50% - 4px/ 2);
-    transform: rotate(-225deg);
-    transition-delay: calc(0s + 0.35s * .6);
+    .bar--top {
+      bottom: calc(50% + 11px + 4px/ 2);
+      transition-property: bottom,transform;
+      transition-delay: calc(0s + 0.35s) * .6;
+    }
+    
+    .bar--middle {
+      top: calc(50% - 4px/ 2);
+      transition-property: opacity,transform;
+      transition-delay: calc(0s + 0.35s * .3);
+    }
+    
+    .bar--bottom {
+      top: calc(50% + 11px + 4px/ 2);
+      transition-property: top,transform;
+      transition-delay: 0s;
+    }
+    
+    #checkbox:checked + .toggle .bar--top {
+      transform: rotate(-135deg);
+      transition-delay: 0s;
+      bottom: calc(50% - 4px/ 2);
+    }
+    
+    #checkbox:checked + .toggle .bar--middle {
+      opacity: 0;
+      transform: rotate(-135deg);
+      transition-delay: calc(0s + 0.35s * .3);
+    }
+    
+    #checkbox:checked + .toggle .bar--bottom {
+      top: calc(50% - 4px/ 2);
+      transform: rotate(-225deg);
+      transition-delay: calc(0s + 0.35s * .6);
+    }
+
+  .menu-options{
+    display: none; /* Oculta as opções inicialmente */
+    position: absolute;
+    width: 250px;
+    top: 15%; /* Posiciona as opções abaixo do botão */
+    left: 35px;
+    border-radius: 10px;
+    padding: 10px;
+    list-style: none;
   }
 
-.menu-options{
-    position: absolute;
+.menu-options a {
+  display: block; /* Torna os links ocuparem a largura total */
+  margin-bottom: 10px;
+  text-decoration: none; /* Remova a decoração de link padrão */
+  color: #ffffff; /* Defina a cor do texto conforme necessário */
+}
+
+.menu-options img {
+  position: absolute;
+  margin: 0px 0px 0px 4px; /* top - right - bottom - left */
+}
+
+
+
+#checkbox:checked + .menu-options {
+  display: block;
+}
+
+.searchpeti #searchInput{
+  margin: 10px 0px 0px 240px; /* top - right - bottom - left */
+  padding: 0px 5px;
+  width: 400px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 15px;
+  position: relative;
+}
+
+.searchpeti #searchpetilupa{
+   /* top - right - bottom - left */
+  position: relative;
 }
