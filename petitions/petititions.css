@@ -37,7 +37,8 @@ body #titleh1{
 
 .box table{
     width: 95%;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;
     border-radius: 5px;
     margin: 50px 0px 5px 5px
 }
@@ -91,6 +92,10 @@ body #titleh1{
   width: 4px;
   background: #888; /* Cor da barra de rolagem */
   border-radius: 10px; /* Bordas arredondadas da barra de rolagem */
+}
+
+::-webkit-scrollbar-track{
+  margin-block: 6px ;
 }
 
 
@@ -188,7 +193,7 @@ body #titleh1{
 }
 
 .searchpeti #searchInput{
-  margin: 10px 0px 0px 240px; /* top - right - bottom - left */
+  margin: 10px 0px 0px 230px; /* top - right - bottom - left */
   padding: 0px 5px;
   width: 400px;
   height: 30px;

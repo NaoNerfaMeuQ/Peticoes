@@ -1,5 +1,18 @@
-<td id="tituloinfo">Passou essa</td>
-<td id="nomeinfo">Passou o nome</td>
-<td id="assinaturainfo">passou assina</td>
-<td id="visualinfo">passou info</td>
+<td id="tituloinfo">Mais vagas para deficiêntes</td>
+<td id="nomeinfo">José Alencar</td>
+<td id="assinaturainfo">2202</td>
+<td id="visualinfo">7500</td>
 <td style="text-align: center;" id="buscapeti"><img src="/petitions/assets/busca.png" alt="Lupa de busca" width="32" height="32" margin-top="5"></i><a href="#"></a> </td>
+<td id="tituloinfo">Inclusão no trabalho</td>
+<td id="nomeinfo">Marcelo Carlos</td>
+<td id="assinaturainfo">5600</td>
+<td id="visualinfo">11245</td>
+<td style="text-align: center;" id="buscapeti"><img src="/petitions/assets/busca.png" alt="Lupa de busca" width="32" height="32" margin-top="5"></i><a href="#"></a> </td>
+<td id="tituloinfo">Equidade nas empresas</td>
+<td id="nomeinfo1">Maria Silva</td>
+<td id="assinaturainfo1">7700</td>
+<td id="visualinfo1">22456</td>
+<td style="text-align: center;" id="buscapeti1"><img src="/petitions/assets/busca.png" alt="Lupa de busca" width="32" height="32" margin-top="5"></i><a href="#"></a> </td>
+
+
+
