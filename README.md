@@ -8,3 +8,6 @@ Sobre o script.js: Todo meu entendimento de javascript veio primeiramente do cur
 Sobre o style.css: Parte inicial entedida por meio das aulas de ADS da Gran e o resto por fora (w3school, youtube, cursos externos pagos)
 
 Sobre todas as imagens(assets): Algumas peguei de parte das explicações mas alterei cor, saturação e posicionamento de todas, assim como seus nomes, como o site não tem propósito comercial, imagino que não há problemas                                                                                                  
+
+//isso aqui vai pra update 1.9.1 (pq me recuso fazer a 2.0 sem grandes mudanças)
+*! LEIA SEU DRIVE, LÁ TEM TUDO PARA VOCÊ TRADUZIR A DOCUMENTAÇÃO!*
