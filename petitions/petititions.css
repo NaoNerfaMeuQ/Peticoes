@@ -43,7 +43,7 @@ body #titleh1{
     margin: 50px 0px 5px 5px
 }
 
-.box #nomepeti, #autorpeti, #assinaturaspeti, #Visualpeti, #sobrepeti{
+.box #nomepeti, #autorpeti, #assinaturaspeti, #Visualpeti, #sobrepeti, #tipopeti{
     font-weight: 1000;
     font-size: 25px;
     padding: 2px;

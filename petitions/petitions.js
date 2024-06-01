@@ -11,23 +11,24 @@ checkbox.addEventListener("change", function() {
 });
 
 function pesquisar() {
-    var input, filter, table, tr, td, i, txtValue;
-    input = document.getElementById("searchInput");
-    filter = input.value.toUpperCase();
-    table = document.getElementById("tabelapeti");
-    tr = table.getElementsByTagName("tr");
-    for (i = 1; i < tr.length; i++) {
-      td = tr[i].getElementsByTagName("td")[0];
-      if (td) {
-        txtValue = td.textContent || td.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-          tr[i].style.display = "";
-        } else {
-          tr[i].style.display = "none";
-        }
-      }       
-    }
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("searchInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("tabelapeti");
+  tr = table.getElementsByTagName("tr");
+  for (i = 1; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td");
+      var found = false;
+      for (var j = 0; j < td.length; j++) {
+          txtValue = td[j].textContent || td[j].innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              found = true;
+              break;
+          }
+      }
+      tr[i].style.display = found ? "" : "none";
   }
+}
 
 
 
@@ -45,3 +46,41 @@ function pesquisar() {
       }
     */
    
+  //filtro por assuntos
+
+
+  var tds = document.querySelectorAll('table td[data-id],[data-categoria]');
+  var botoesMenu = document.querySelectorAll('.menu-options a');
+
+  botoesMenu.forEach(function(botao) {
+      botao.addEventListener('click', function(e) {
+          var categoria = e.target.id;
+          for (var i = 0; i < tds.length; i++) {
+              var tr = tds[i].closest('tr');
+              tr.style.display = categoria == tds[i].dataset.categoria || !categoria ? '' : 'none';
+          }
+      });
+  });
+
+  var tds = document.querySelectorAll('table td[data-id],[data-categoria]');
+  var botoesMenu = document.querySelectorAll('.menu-options a');
+  var botaoMostrarTodas = document.getElementById('mostrarTodas');
+
+  botaoMostrarTodas.addEventListener('click', function() {
+      for (var i = 0; i < tds.length; i++) {
+          var tr = tds[i].closest('tr');
+          tr.style.display = ''; // Exibir todas as linhas
+      }
+  });
+
+   var tds = document.querySelectorAll('table td[data-id],[data-categoria]');
+    var botoesMenu = document.querySelectorAll('.menu-options a');
+    var botaoVoltarInicio = document.getElementById('voltarInicio');
+
+    botaoVoltarInicio.addEventListener('click', function() {
+        // Remova o filtro para exibir todas as linhas
+        for (var i = 0; i < tds.length; i++) {
+            var tr = tds[i].closest('tr');
+            tr.style.display = '';
+        }
+    });

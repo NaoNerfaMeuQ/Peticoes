@@ -19,11 +19,14 @@
             </label>
         </div>
         <div class="menu-options">
-            <a href="javascript:changepetition()">Diversidade<img src="assets/woman.png" alt="Mulher" width="23" height="23"></a>
-            <a href="#">Meio ambiente<img src="assets/pata.png" alt="Pata" width="23" height="23"></a>
-            <a href="#">Reclamações<img src="assets/table.png" alt="Tabela" width="23" height="23"></a>
-            <a href="#">Famosos<img src="assets/microphone.png" alt="Microfone" width="23" height="23"></a>
-            <a href="/index.html">Home<img src="assets/home.png" alt="Home" width="23" height="23"></a>
+            <a id="Meio Ambiente" href="#">Meio ambiente<img src="assets/pata.png" alt="Pata" width="23" height="23"></a>
+            <a id="Diversidade" href="#">Diversidade<img src="assets/woman.png" alt="Mulher" width="23" height="23"></a>
+            <a id="Reclamacoes" href="#">Reclamações<img src="assets/table.png" alt="Tabela" width="23" height="23"></a>
+            <a id="Famosos" href="#">Famosos<img src="assets/microphone.png" alt="Microfone" width="23" height="23"></a>
+            <a id="mostrarTodas" href="#">Todas categorias<img src="assets/olho.png" alt="Um olho" width="23" height="23"></a>
+            <a id="CriaraSua" href="#">Criar uma petição<img src="assets/lapis.png" alt="Lapis" width="23" height="23"></a>
+            <a id="voltarInicio" href="/index.html">Home<img src="assets/home.png" alt="Home" width="23" height="23"></a>
+            
 
 
         </div>
@@ -39,97 +42,108 @@
               
         <div class="box">
             <table id="tabelapeti" style="border-radius: 15;" >
+              <thead>
                 <tr id="tabeinfo" style="text-align: center;">
-                    
-                    <td id="nomepeti">Nome</td>
-                    <td id="autorpeti">Autor</td>
-                    <td id="assinaturaspeti">Assinaturas</td>
-                    <td id="Visualpeti">Visualizações</td>
-                    <td id="sobrepeti">Sobre</td>
+                    <th id="tipopeti">Categoria</th>
+                    <th id="nomepeti">Nome</th>
+                    <th id="autorpeti">Autor</th>
+                    <th id="assinaturaspeti">Assinaturas</th>
+                    <th id="Visualpeti">Visualizações</th>
+                    <th id="sobrepeti">Sobre</th>
                   </tr>
-                
-                
-                  <tr class="infopeti" id="infopeti" style="text-align: center;">
+              </thead>
+              <tbody> 
+                  <tr class="infopeti" data-id="1" data-categoria="Meio Ambiente" style="text-align: center;">
+                    <td id="idinfo">Meio Ambiente</td>
                     <td id="tituloinfo">Em defesa da natureza</td>
                     <td id="nomeinfo">José Padilha</td>
                     <td id="assinaturainfo">5600</td>
                     <td id="visualinfo">11245</td>
-                    <td style="text-align: center;" id="buscapeti"><img src="/petitions/assets/busca.png" alt="Lupa de busca" width="32" height="32" margin-top="5"><a href="/maintenance/maintenance.html">ERROR AQUI (LEIA O GITHUB PARA ENTENDER)</a> </td>
+                    <td style="text-align: center;" id="buscapeti"><a href="/maintenance/maintenance.html"><img src="/petitions/assets/busca.png" alt="Lupa de busca" width="32" height="32" margin-top="5"></a> </td>
                   </tr>
-                </tr>
-                <tr class="infopeti" style="text-align: center;">
+                <tr class="infopeti" data-id="1" data-categoria="Meio Ambiente" style="text-align: center;">
+                    <td id="idinfo">Meio Ambiente</td>
                     <td id="tituloinfo">Enchentes recorrentes!</td>
                     <td id="nomeinfo">Maria Eduarda</td>
                     <td id="assinaturainfo">3454</td>
                     <td id="visualinfo">7040</td>
-                    <td style="text-align: center;" id="buscapeti"><img src="/petitions/assets/busca.png" alt="Lupa de busca" width="32" height="32" margin-top="5"></i><a href="#"></a> </td>
+                    <td style="text-align: center;" id="buscapeti"><a href="/maintenance/maintenance.html"><img src="/petitions/assets/busca.png" alt="Lupa de busca" width="32" height="32" margin-top="5"></a> </td>
                   </tr>
-                  <tr class="infopeti" style="text-align: center;">
-                    <td id="tituloinfo">A Taylor acaba com a causa ambiental</td>
+                  <tr class="infopeti" data-id="4" data-categoria="Famosos" style="text-align: center;">
+                    <td id="idinfo">Famosos</td>
+                    <td id="tituloinfo">Taylor, um problema</td>
                     <td id="nomeinfo">Jefferson Almeida</td>
                     <td id="assinaturainfo">2400</td>
                     <td id="visualinfo">10400</td>
-                    <td style="text-align: center;" id="buscapeti"><img src="/petitions/assets/busca.png" alt="Lupa de busca" width="32" height="32" margin-top="5"></i><a href="#"></a> </td>
+                    <td style="text-align: center;" id="buscapeti"><a href="/maintenance/maintenance.html"><img src="/petitions/assets/busca.png" alt="Lupa de busca" width="32" height="32" margin-top="5"></a> </td>
                   </tr>
 
                   <!--TABELAS EXEMPLO-->
-                  <tr class="infopeti" style="text-align: center;">
-                    <td id="tituloinfo">Contra o aumento de impostos</td>
+                  <tr class="infopeti" data-id="3" data-categoria="Reclamacoes" style="text-align: center;">
+                    <td id="idinfo">Reclamacoes</td>
+                    <td id="tituloinfo">Diminuir impostos</td>
                     <td id="nomeinfo">Aline Barros</td>
                     <td id="assinaturainfo">2350</td>
                     <td id="visualinfo">8905</td>
-                    <td style="text-align: center;" id="buscapeti"><img src="/petitions/assets/busca.png" alt="Lupa de busca" width="32" height="32" margin-top="5"></i><a href="#"></a> </td>
+                    <td style="text-align: center;" id="buscapeti"><a href="/maintenance/maintenance.html"><img src="/petitions/assets/busca.png" alt="Lupa de busca" width="32" height="32" margin-top="5"></a> </td>
                   </tr>
-                  <tr class="infopeti" style="text-align: center;">
-                    <td id="tituloinfo">Mais vagas para deficiêntes</td>
+                  <tr class="infopeti" data-id="2" data-categoria="Diversidade" style="text-align: center;">
+                    <td id="idinfo">Diversidade</td>
+                    <td id="tituloinfo">Mais vagas aos deficiêntes</td>
                     <td id="nomeinfo">José Alencar</td>
                     <td id="assinaturainfo">2202</td>
                     <td id="visualinfo">7500</td>
-                    <td style="text-align: center;" id="buscapeti"><img src="/petitions/assets/busca.png" alt="Lupa de busca" width="32" height="32" margin-top="5"></i><a href="#"></a> </td>
+                    <td style="text-align: center;" id="buscapeti"><a href="/maintenance/maintenance.html"><img src="/petitions/assets/busca.png" alt="Lupa de busca" width="32" height="32" margin-top="5"></a> </td>
                   </tr>
-                  <tr class="infopeti" style="text-align: center;">
+                  <tr class="infopeti" data-id="3" data-categoria="Reclamacoes" style="text-align: center;">
+                    <td id="idinfo">Reclamações</td>
                     <td id="tituloinfo">PROCON sem atendentes</td>
                     <td id="nomeinfo">Helena Silva</td>
                     <td id="assinaturainfo">2200</td>
                     <td id="visualinfo">8600</td>
-                    <td style="text-align: center;" id="buscapeti"><img src="/petitions/assets/busca.png" alt="Lupa de busca" width="32" height="32" margin-top="5"></i><a href="#"></a> </td>
+                    <td style="text-align: center;" id="buscapeti"><a href="/maintenance/maintenance.html"><img src="/petitions/assets/busca.png" alt="Lupa de busca" width="32" height="32" margin-top="5"></a> </td>
                   </tr>
-                  <tr class="infopeti" style="text-align: center;">
+                  <tr class="infopeti" data-id="3" data-categoria="Reclamacoes" style="text-align: center;">
+                    <td id="idinfo">Reclamações</td>
                     <td id="tituloinfo">Demora em processos</td>
                     <td id="nomeinfo">Cardoso Pinheiro</td>
                     <td id="assinaturainfo">1990</td>
                     <td id="visualinfo">7550</td>
-                    <td style="text-align: center;" id="buscapeti"><img src="/petitions/assets/busca.png" alt="Lupa de busca" width="32" height="32" margin-top="5"></i><a href="#"></a> </td>
+                    <td style="text-align: center;" id="buscapeti"><a href="/maintenance/maintenance.html"><img src="/petitions/assets/busca.png" alt="Lupa de busca" width="32" height="32" margin-top="5"></a> </td>
                   </tr>
-                  <tr class="infopeti" style="text-align: center;">
+                  <tr class="infopeti" data-id="3" data-categoria="Reclamacoes" style="text-align: center;">
+                    <td id="idinfo">Reclamações</td>
                     <td id="tituloinfo">Abaixo o preço de peças!</td>
                     <td id="nomeinfo">Lufan Casagrande</td>
                     <td id="assinaturainfo">1981</td>
                     <td id="visualinfo">6500</td>
-                    <td style="text-align: center;" id="buscapeti"><img src="/petitions/assets/busca.png" alt="Lupa de busca" width="32" height="32" margin-top="5"></i><a href="#"></a> </td>
+                    <td style="text-align: center;" id="buscapeti"><a href="/maintenance/maintenance.html"><img src="/petitions/assets/busca.png" alt="Lupa de busca" width="32" height="32" margin-top="5"></a> </td>
                   </tr>
-                  <tr class="infopeti" style="text-align: center;">
-                    <td id="tituloinfo">Mal atendimento em bancos</td>
+                  <tr class="infopeti" data-id="3" data-categoria="Reclamacoes" style="text-align: center;">
+                    <td id="idinfo">Reclamações</td>
+                    <td id="tituloinfo">Mal atendido no banco</td>
                     <td id="nomeinfo">Alirnda Souza</td>
                     <td id="assinaturainfo">1979</td>
                     <td id="visualinfo">7542</td>
-                    <td style="text-align: center;" id="buscapeti"><img src="/petitions/assets/busca.png" alt="Lupa de busca" width="32" height="32" margin-top="5"></i><a href="#"></a> </td>
+                    <td style="text-align: center;" id="buscapeti"><a href="/maintenance/maintenance.html"><img src="/petitions/assets/busca.png" alt="Lupa de busca" width="32" height="32" margin-top="5"></a> </td>
                   </tr>
-                  <tr class="infopeti" style="text-align: center;">
+                  <tr class="infopeti" data-id="3" data-categoria="Reclamacoes" style="text-align: center;">
+                    <td id="idinfo">Reclamações</td>
                     <td id="tituloinfo">Entregas extraviadas</td>
                     <td id="nomeinfo">Arlindo Martins</td>
                     <td id="assinaturainfo">1975</td>
                     <td id="visualinfo">9500</td>
-                    <td style="text-align: center;" id="buscapeti"><img src="/petitions/assets/busca.png" alt="Lupa de busca" width="32" height="32" margin-top="5"></i><a href="#"></a> </td>
+                    <td style="text-align: center;" id="buscapeti"><a href="/maintenance/maintenance.html"><img src="/petitions/assets/busca.png" alt="Lupa de busca" width="32" height="32" margin-top="5"></a> </td>
                   </tr>
-                  <tr class="infopeti" style="text-align: center;">
-                    <td id="tituloinfo">Cotas baixas para PCD's</td>
+                  <tr class="infopeti" data-id="2" data-categoria="Diversidade" style="text-align: center;">
+                    <td id="idinfo">Diversidade</td>
+                    <td id="tituloinfo">Mais cotas para PCD's</td>
                     <td id="nomeinfo">Marcos Vargas</td>
                     <td id="assinaturainfo">1840</td>
                     <td id="visualinfo">7560</td>
-                    <td style="text-align: center;" id="buscapeti"><img src="/petitions/assets/busca.png" alt="Lupa de busca" width="32" height="32" margin-top="5"></i><a href="#"></a> </td>
+                    <td style="text-align: center;" id="buscapeti"><a href="/maintenance/maintenance.html"><img src="/petitions/assets/busca.png" alt="Lupa de busca" width="32" height="32" margin-top="5"></a> </td>
                   </tr>
-                  
+                 </tbody>
 
 
             </table>
