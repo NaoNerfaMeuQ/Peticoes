@@ -84,3 +84,15 @@ function pesquisar() {
             tr.style.display = '';
         }
     });
+
+    var tds = document.querySelectorAll('table td[data-id],[data-categoria]');
+    var botoesMenu = document.querySelectorAll('.menu-options a');
+    var botaoVoltarInicio = document.getElementById('CriaraSua');
+
+    botaoVoltarInicio.addEventListener('click', function() {
+        // Remova o filtro para exibir todas as linhas
+        for (var i = 0; i < tds.length; i++) {
+            var tr = tds[i].closest('tr');
+            tr.style.display = '';
+        }
+    });

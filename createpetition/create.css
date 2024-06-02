@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all .2s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+    background: linear-gradient(to bottom, #3B3291 10%, #d45a5a 70%);
+}
+
+body{
+    height: 100vh;
+    
+}
+
+body #titleh1{
+    margin: auto;
+    text-align: center;
+    color: rgb(211, 120, 34);
+}
+
+
+.container{
+    margin: auto;
+    width: 760px;
+    height: 665px;
+    background: linear-gradient(0.25turn, #ffffff, #c5c1c1, #c0daef);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: 2px solid;
+    border-radius: 18px;
+    overflow-x: auto;
+    
+}
+
+.container #corujatopo{
+    margin: 6px 0px 0px 330px; /* top - right - bottom - left */
+    position: relative;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px;
+    border-radius: 10px;
+}
+
+.box #form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 10px 0px 0px 0px; /* top - right - bottom - left */
+
+}
+
+.box #form input, select, textarea{
+    width: 100%;
+    border: 2px solid rgb(30, 30, 30);
+    border-radius: 10px;
+    padding: 2px;
+
+}
+
+.box button{
+    margin-top: 3px;
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+.box button:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+.box button:active {
+    transform: translateY(-1px);
+  }
+
+::-webkit-scrollbar {
+    padding: 2px;
+    height: 5px;
+    width: 10px; /* Largura da barra de rolagem */
+  }
+  ::-webkit-scrollbar-thumb {
+    width: 4px;
+    background: #888; /* Cor da barra de rolagem */
+    border-radius: 10px; /* Bordas arredondadas da barra de rolagem */
+  }
+  
+  ::-webkit-scrollbar-track{
+    margin-block: 6px ;
+  }
+
+  .extra-info {
+    display: none;
+    line-height: 30px;
+    font-size: 12px;
+      position: absolute;
+    top: 0;
+    left: 50px;
+  }
+  
+  .info:hover .extra-info {
+    display: block;
+  }
+  
+  .info {
+    font-size: 20px;
+    padding-left: 5px;
+    width: 20px;
+    border-radius: 15px;
+  }
+  
+  .info:hover {
+    background-color: white;
+    padding: 0 0 0 5px;
+    width: 315px;
+    text-align: left !important;
+  }
