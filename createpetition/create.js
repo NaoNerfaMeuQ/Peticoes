@@ -35,7 +35,7 @@ form.addEventListener("submit", (event) => {
 
     //Se estiver tudo ok, então:
 
-    form.submit();
+    form.submit(alert("Sua petição foi enviada e será analisada! Nosso time enviará um email quando estiver tudo certo."));
 
 })
 
